@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
         <figure className="hero-photo">
-          <img src="/ewa-storefront.jpg" alt="The Ewa Trading storefront at 80 Mulberry Street" />
+          <img src="/ewa-storefront-v2.jpg" alt="The Ewa Trading storefront and blue awning at 80 Mulberry Street" />
           <figcaption>
             <span>Find the gold sign</span>
             <strong>80 Mulberry St.</strong>
