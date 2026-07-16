@@ -31,7 +31,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">A Chinatown neighborhood institution</p>
-          <h1>Tradition, steeped in Chinatown.</h1>
+          <h1>Rooted in Chinatown. Here for generations.</h1>
           <p className="hero-lede">
             A family-run shop for Chinese herbs, tea, ginseng, pantry staples,
             and thoughtful guidance—welcoming neighbors from Chinatown and beyond.
@@ -66,7 +66,7 @@ export default function Home() {
         </article>
         <article>
           <span className="info-icon" aria-hidden="true">02</span>
-          <div><small>Publicly listed hours</small><strong>Daily, 10 AM–6 PM</strong></div>
+          <div><small>Store hours</small><strong>Daily, 10 AM–6 PM</strong></div>
         </article>
         <article>
           <span className="info-icon" aria-hidden="true">03</span>
@@ -164,7 +164,7 @@ export default function Home() {
           <h2>Stop by and say hello.</h2>
           <div className="visit-list">
             <div><small>Address</small><p>80 Mulberry Street<br />New York, NY 10013</p></div>
-            <div><small>Hours</small><p>Public listings show<br />Daily, 10 AM–6 PM</p></div>
+            <div><small>Store hours</small><p>Daily<br />10 AM–6 PM</p></div>
             <div><small>Phone</small><p><a href={phoneHref}>(212) 964-2017</a><br />Call to confirm hours</p></div>
             <div><small>Languages</small><p>English<br />Cantonese · Mandarin</p></div>
           </div>
