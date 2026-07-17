@@ -10,7 +10,7 @@ test("exports a GitHub Pages-ready site", async () => {
   assert.match(html, /<title>Ewa Trading Co\. \| Chinese Herbs &amp; Tea in NYC Chinatown<\/title>/i);
   assert.match(html, /Rooted in Chinatown\. Here for generations\./);
   assert.match(html, /\/ewatrading\/ewa-storefront-v2\.jpg/);
-  assert.match(html, /https:\/\/bkhzhou\.github\.io\/ewatrading\/og\.png/);
+  assert.match(html, /https:\/\/bkhzhou\.github\.io\/ewatrading\/og-v2\.png/);
   assert.doesNotMatch(html, /ewa-trading-chinatown\.typeoffline\.chatgpt\.site/);
 
   await Promise.all([
@@ -18,6 +18,6 @@ test("exports a GitHub Pages-ready site", async () => {
     access(new URL("ewa-history-1.jpg", outputRoot)),
     access(new URL("ewa-detail.jpg", outputRoot)),
     access(new URL("ewa-shop.jpg", outputRoot)),
-    access(new URL("og.png", outputRoot)),
+    access(new URL("og-v2.png", outputRoot)),
   ]);
 });
