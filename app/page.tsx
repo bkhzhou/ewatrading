@@ -2,7 +2,7 @@ const directionsUrl =
   "https://www.google.com/maps/dir/?api=1&destination=Ewa+Trading+Co+Inc%2C+80+Mulberry+St%2C+New+York%2C+NY+10013";
 
 const phoneHref = "tel:+12129642017";
-const assetPath = (filename: string) => `/ewatrading/${filename}`;
+const assetPath = (filename: string) => `/${filename}`;
 
 export default function Home() {
   return (

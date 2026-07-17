@@ -4,13 +4,15 @@ import test from "node:test";
 
 const outputRoot = new URL("../out/", import.meta.url);
 
-test("exports a GitHub Pages-ready site", async () => {
+test("exports a custom-domain GitHub Pages site", async () => {
   const html = await readFile(new URL("index.html", outputRoot), "utf8");
 
   assert.match(html, /<title>Ewa Trading Co\. \| Chinese Herbs &amp; Tea in NYC Chinatown<\/title>/i);
   assert.match(html, /Rooted in Chinatown\. Here for generations\./);
-  assert.match(html, /\/ewatrading\/ewa-storefront-v2\.jpg/);
-  assert.match(html, /https:\/\/bkhzhou\.github\.io\/ewatrading\/og-v2\.png/);
+  assert.match(html, /src="\/ewa-storefront-v2\.jpg"/);
+  assert.match(html, /href="\/_next\/static\/chunks\/[^\"]+\.css"/);
+  assert.match(html, /https:\/\/ewatrading\.co\/og-v2\.png/);
+  assert.doesNotMatch(html, /\/ewatrading\//);
   assert.doesNotMatch(html, /ewa-trading-chinatown\.typeoffline\.chatgpt\.site/);
 
   await Promise.all([
