@@ -2,6 +2,7 @@ const directionsUrl =
   "https://www.google.com/maps/dir/?api=1&destination=Ewa+Trading+Co+Inc%2C+80+Mulberry+St%2C+New+York%2C+NY+10013";
 
 const phoneHref = "tel:+12129642017";
+const assetPath = (filename: string) => `/ewatrading/${filename}`;
 
 export default function Home() {
   return (
@@ -51,7 +52,7 @@ export default function Home() {
           </div>
         </div>
         <figure className="hero-photo">
-          <img src="/ewa-storefront-v2.jpg" alt="The Ewa Trading storefront and blue awning at 80 Mulberry Street" />
+          <img src={assetPath("ewa-storefront-v2.jpg")} alt="The Ewa Trading storefront and blue awning at 80 Mulberry Street" />
           <figcaption>
             <span>Find the gold sign</span>
             <strong>80 Mulberry St.</strong>
@@ -114,11 +115,11 @@ export default function Home() {
       <section className="story section" id="about">
         <div className="story-photos">
           <figure className="story-photo story-photo-old">
-            <img src="/ewa-history-1.jpg" alt="The original Ewa Imports storefront at 24 Mott Street" />
+            <img src={assetPath("ewa-history-1.jpg")} alt="The original Ewa Imports storefront at 24 Mott Street" />
             <figcaption>Original 24 Mott Street storefront, 1980s</figcaption>
           </figure>
           <figure className="story-photo story-photo-shop">
-            <img src="/ewa-detail.jpg" alt="Herbal drawers and products inside Ewa Trading" />
+            <img src={assetPath("ewa-detail.jpg")} alt="Herbal drawers and products inside Ewa Trading" />
           </figure>
         </div>
         <div className="story-copy">
@@ -156,7 +157,7 @@ export default function Home() {
 
       <section className="visit section" id="visit">
         <div className="visit-photo">
-          <img src="/ewa-shop.jpg" alt="A selection of herbs arranged inside Ewa Trading" />
+          <img src={assetPath("ewa-shop.jpg")} alt="A selection of herbs arranged inside Ewa Trading" />
           <div className="photo-badge"><strong>裕華</strong><span>Mulberry Street</span></div>
         </div>
         <div className="visit-copy">
