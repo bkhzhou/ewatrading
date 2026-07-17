@@ -23,3 +23,16 @@ test("exports a custom-domain GitHub Pages site", async () => {
     access(new URL("og-v2.png", outputRoot)),
   ]);
 });
+
+test("exports search-engine discovery files", async () => {
+  const [robots, sitemap] = await Promise.all([
+    readFile(new URL("robots.txt", outputRoot), "utf8"),
+    readFile(new URL("sitemap.xml", outputRoot), "utf8"),
+  ]);
+
+  assert.match(robots, /^User-agent: \*$/m);
+  assert.match(robots, /^Allow: \/$/m);
+  assert.match(robots, /^Sitemap: https:\/\/ewatrading\.co\/sitemap\.xml$/m);
+  assert.match(sitemap, /<loc>https:\/\/ewatrading\.co\/<\/loc>/);
+  assert.match(sitemap, /xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9"/);
+});
