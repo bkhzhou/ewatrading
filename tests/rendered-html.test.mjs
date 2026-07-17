@@ -27,6 +27,9 @@ test("exports a custom-domain GitHub Pages site", async () => {
   assert.match(html, /Jump to any part of the shop’s story/);
   assert.match(html, /https:\/\/share\.google\/kLKVi41SoSOsJe8rd/);
   assert.match(html, /https:\/\/www\.yelp\.com\/biz\/ewa-trading-new-york/);
+  assert.match(html, /src="\/google-icon\.svg"/);
+  assert.match(html, /src="\/yelp-icon\.svg"/);
+  assert.doesNotMatch(html, /[↗↘→←]/);
   assert.doesNotMatch(html, /\/ewatrading\//);
   assert.doesNotMatch(html, /ewa-trading-chinatown\.typeoffline\.chatgpt\.site/);
 
@@ -40,6 +43,8 @@ test("exports a custom-domain GitHub Pages site", async () => {
     access(new URL("ewa-ginseng-roots.jpg", outputRoot)),
     access(new URL("ewa-herb-dosage.jpg", outputRoot)),
     access(new URL("ewa-tea.jpg", outputRoot)),
+    access(new URL("google-icon.svg", outputRoot)),
+    access(new URL("yelp-icon.svg", outputRoot)),
     access(new URL("og-v2.png", outputRoot)),
   ]);
 });

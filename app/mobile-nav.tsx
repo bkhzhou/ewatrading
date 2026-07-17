@@ -66,13 +66,13 @@ export default function MobileNav({ directionsUrl, phoneHref }: MobileNavProps) 
             <a href={link.href} key={link.href} onClick={() => setOpen(false)}>
               <small>{link.number}</small>
               <strong>{link.label}</strong>
-              <span aria-hidden="true">↘</span>
+              <span className="arrow-icon arrow-down-right" aria-hidden="true" />
             </a>
           ))}
         </nav>
         <div className="mobile-menu-actions">
           <a className="button button-gold" href={directionsUrl} target="_blank" rel="noreferrer">
-            Get directions <span aria-hidden="true">↗</span>
+            Get directions <span className="arrow-icon arrow-up-right" aria-hidden="true" />
           </a>
           <a className="button button-outline-dark" href={phoneHref} onClick={() => setOpen(false)}>
             Call (212) 964-2017

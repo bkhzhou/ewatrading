@@ -47,10 +47,10 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="button button-gold" href={directionsUrl} target="_blank" rel="noreferrer">
-              Get directions <span aria-hidden="true">↗</span>
+              Get directions <span className="arrow-icon arrow-up-right" aria-hidden="true" />
             </a>
             <a className="text-link light-link" href={phoneHref}>
-              (212) 964-2017 <span aria-hidden="true">→</span>
+              (212) 964-2017 <span className="arrow-icon arrow-right" aria-hidden="true" />
             </a>
           </div>
           <div className="hero-meta" aria-label="Store highlights">
@@ -193,7 +193,7 @@ export default function Home() {
                 <div><strong>7</strong><span>days serving customers</span></div>
               </div>
               <a href={spotlightUrl} target="_blank" rel="noreferrer">
-                Read the business spotlight <span aria-hidden="true">↗</span>
+                Read the business spotlight <span className="arrow-icon arrow-up-right" aria-hidden="true" />
               </a>
             </div>
           </article>
@@ -222,7 +222,7 @@ export default function Home() {
                 <div><strong>2</strong><span>Chinatown storefronts</span></div>
               </div>
               <a href={thenAndNowUrl} target="_blank" rel="noreferrer">
-                Explore then &amp; now <span aria-hidden="true">↗</span>
+                Explore then &amp; now <span className="arrow-icon arrow-up-right" aria-hidden="true" />
               </a>
             </div>
           </article>
@@ -256,7 +256,7 @@ export default function Home() {
             <div><small>Languages</small><p>English<br />Cantonese · Mandarin</p></div>
           </div>
           <div className="visit-actions">
-            <a className="button button-gold" href={directionsUrl} target="_blank" rel="noreferrer">Open in Google Maps ↗</a>
+            <a className="button button-gold" href={directionsUrl} target="_blank" rel="noreferrer">Open in Google Maps <span className="arrow-icon arrow-up-right" aria-hidden="true" /></a>
             <a className="button button-outline-light" href="https://www.instagram.com/ewatradingnyc/" target="_blank" rel="noreferrer">@ewatradingnyc</a>
           </div>
           <p className="hours-note">Hours can change on holidays. Please call before making a special trip.</p>
@@ -273,10 +273,12 @@ export default function Home() {
           <span>Customer reviews</span>
           <div className="footer-review-links">
             <a href="https://share.google/kLKVi41SoSOsJe8rd" target="_blank" rel="noreferrer">
-              Google reviews <span aria-hidden="true">↗</span>
+              <img className="review-icon review-icon-google" src={assetPath("google-icon.svg")} alt="" aria-hidden="true" />
+              Google reviews <span className="arrow-icon arrow-up-right" aria-hidden="true" />
             </a>
             <a href="https://www.yelp.com/biz/ewa-trading-new-york?utm_campaign=www_business_share_popup&amp;utm_medium=copy_link&amp;utm_source=(direct)" target="_blank" rel="noreferrer">
-              Yelp reviews <span aria-hidden="true">↗</span>
+              <img className="review-icon review-icon-yelp" src={assetPath("yelp-icon.svg")} alt="" aria-hidden="true" />
+              Yelp reviews <span className="arrow-icon arrow-up-right" aria-hidden="true" />
             </a>
           </div>
         </div>
