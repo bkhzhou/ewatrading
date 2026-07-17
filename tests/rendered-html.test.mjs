@@ -25,6 +25,8 @@ test("exports a custom-domain GitHub Pages site", async () => {
   assert.match(html, /@ewatradingnyc/);
   assert.match(html, /Open navigation menu/);
   assert.match(html, /Jump to any part of the shop’s story/);
+  assert.match(html, /https:\/\/share\.google\/kLKVi41SoSOsJe8rd/);
+  assert.match(html, /https:\/\/www\.yelp\.com\/biz\/ewa-trading-new-york/);
   assert.doesNotMatch(html, /\/ewatrading\//);
   assert.doesNotMatch(html, /ewa-trading-chinatown\.typeoffline\.chatgpt\.site/);
 

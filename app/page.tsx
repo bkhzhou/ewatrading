@@ -269,6 +269,17 @@ export default function Home() {
           <span><strong>EWA TRADING CO.</strong><small>Serving Chinatown since 1984</small></span>
         </a>
         <p>Herbs · Tea · Ginseng · Traditional goods</p>
+        <div className="footer-reviews">
+          <span>Customer reviews</span>
+          <div className="footer-review-links">
+            <a href="https://share.google/kLKVi41SoSOsJe8rd" target="_blank" rel="noreferrer">
+              Google reviews <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://www.yelp.com/biz/ewa-trading-new-york?utm_campaign=www_business_share_popup&amp;utm_medium=copy_link&amp;utm_source=(direct)" target="_blank" rel="noreferrer">
+              Yelp reviews <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
         <p className="disclaimer">Products and information are not intended to diagnose, treat, cure, or prevent any disease. Consult a qualified healthcare professional for medical advice.</p>
         <p className="credit">Historic details and photography referenced from <a href="https://welcometochinatown.com/news/then-and-now-ewa-trading" target="_blank" rel="noreferrer">Welcome to Chinatown</a>.</p>
       </footer>
