@@ -12,6 +12,9 @@ test("exports a custom-domain GitHub Pages site", async () => {
   assert.match(html, /src="\/ewa-storefront-v2\.jpg"/);
   assert.match(html, /href="\/_next\/static\/chunks\/[^\"]+\.css"/);
   assert.match(html, /https:\/\/ewatrading\.co\/og-v2\.png/);
+  assert.match(html, /Stories from Welcome to Chinatown\./);
+  assert.match(html, /business-spotlight-ewa-trading-company/);
+  assert.match(html, /then-and-now-ewa-trading/);
   assert.doesNotMatch(html, /\/ewatrading\//);
   assert.doesNotMatch(html, /ewa-trading-chinatown\.typeoffline\.chatgpt\.site/);
 
