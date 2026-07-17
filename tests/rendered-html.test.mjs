@@ -15,6 +15,13 @@ test("exports a custom-domain GitHub Pages site", async () => {
   assert.match(html, /Stories from Welcome to Chinatown\./);
   assert.match(html, /business-spotlight-ewa-trading-company/);
   assert.match(html, /then-and-now-ewa-trading/);
+  assert.match(html, /ewa-mr-zhou-counter\.webp/);
+  assert.match(html, /ewa-herbs-assortment\.jpg/);
+  assert.match(html, /ewa-ginseng-roots\.jpg/);
+  assert.match(html, /ewa-herb-dosage\.jpg/);
+  assert.match(html, /ewa-tea\.jpg/);
+  assert.match(html, /Derick Marquez Photography/);
+  assert.match(html, /@ewatradingnyc/);
   assert.doesNotMatch(html, /\/ewatrading\//);
   assert.doesNotMatch(html, /ewa-trading-chinatown\.typeoffline\.chatgpt\.site/);
 
@@ -23,6 +30,11 @@ test("exports a custom-domain GitHub Pages site", async () => {
     access(new URL("ewa-history-1.jpg", outputRoot)),
     access(new URL("ewa-detail.jpg", outputRoot)),
     access(new URL("ewa-shop.jpg", outputRoot)),
+    access(new URL("ewa-mr-zhou-counter.webp", outputRoot)),
+    access(new URL("ewa-herbs-assortment.jpg", outputRoot)),
+    access(new URL("ewa-ginseng-roots.jpg", outputRoot)),
+    access(new URL("ewa-herb-dosage.jpg", outputRoot)),
+    access(new URL("ewa-tea.jpg", outputRoot)),
     access(new URL("og-v2.png", outputRoot)),
   ]);
 });

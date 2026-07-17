@@ -160,44 +160,68 @@ export default function Home() {
         </div>
         <div className="feature-grid">
           <article className="feature-card feature-spotlight">
-            <div className="feature-meta">
-              <span>Business spotlight</span>
-              <span>Welcome to Chinatown</span>
+            <figure className="feature-gallery">
+              <div className="feature-gallery-grid">
+                <img src={assetPath("ewa-herbs-assortment.jpg")} alt="An assortment of traditional Chinese herbs" />
+                <img src={assetPath("ewa-ginseng-roots.jpg")} alt="Fresh ginseng roots at Ewa Trading" />
+                <img src={assetPath("ewa-herb-dosage.jpg")} alt="Herbs arranged into individual daily preparations" />
+                <img src={assetPath("ewa-tea.jpg")} alt="Chinese tea leaves with a clay teapot and cup" />
+              </div>
+              <figcaption>
+                Herbs, ginseng, daily preparations &amp; tea · Photos: {" "}
+                <a href="https://www.instagram.com/ewatradingnyc/" target="_blank" rel="noreferrer">@ewatradingnyc</a>
+                {" "}via Welcome to Chinatown
+              </figcaption>
+            </figure>
+            <div className="feature-card-body">
+              <div className="feature-meta">
+                <span>Business spotlight</span>
+                <span>Welcome to Chinatown</span>
+              </div>
+              <h3>A shop built on personal guidance.</h3>
+              <p>
+                Mr. and Mrs. Zhou describe how they help first-time visitors
+                understand herbs, teas, roots, and traditional preparations. The
+                profile also celebrates a customer community spanning generations
+                and backgrounds.
+              </p>
+              <div className="feature-facts" aria-label="Business spotlight highlights">
+                <div><strong>20+</strong><span>years at the helm</span></div>
+                <div><strong>7</strong><span>days serving customers</span></div>
+              </div>
+              <a href={spotlightUrl} target="_blank" rel="noreferrer">
+                Read the business spotlight <span aria-hidden="true">↗</span>
+              </a>
             </div>
-            <h3>A shop built on personal guidance.</h3>
-            <p>
-              Mr. and Mrs. Zhou describe how they help first-time visitors
-              understand herbs, teas, roots, and traditional preparations. The
-              profile also celebrates a customer community spanning generations
-              and backgrounds.
-            </p>
-            <div className="feature-facts" aria-label="Business spotlight highlights">
-              <div><strong>20+</strong><span>years at the helm</span></div>
-              <div><strong>7</strong><span>days serving customers</span></div>
-            </div>
-            <a href={spotlightUrl} target="_blank" rel="noreferrer">
-              Read the business spotlight <span aria-hidden="true">↗</span>
-            </a>
           </article>
 
           <article className="feature-card feature-history">
-            <div className="feature-meta">
-              <span>Then &amp; Now</span>
-              <span>Welcome to Chinatown</span>
+            <figure className="feature-portrait">
+              <img src={assetPath("ewa-mr-zhou-counter.webp")} alt="Mr. Zhou behind the counter at Ewa Trading" />
+              <figcaption>
+                Mr. Zhou behind the store counter · Photo: Derick Marquez Photography
+                via Welcome to Chinatown
+              </figcaption>
+            </figure>
+            <div className="feature-card-body">
+              <div className="feature-meta">
+                <span>Then &amp; Now</span>
+                <span>Welcome to Chinatown</span>
+              </div>
+              <h3>A legacy carried forward.</h3>
+              <p>
+                The retrospective traces Ewa Trading from its 1984 opening at 24
+                Mott Street to 80 Mulberry Street, including the shop’s reopening
+                after a four-month closure following the 2022 fire next door.
+              </p>
+              <div className="feature-facts" aria-label="Then and now highlights">
+                <div><strong>1984</strong><span>original opening</span></div>
+                <div><strong>2</strong><span>Chinatown storefronts</span></div>
+              </div>
+              <a href={thenAndNowUrl} target="_blank" rel="noreferrer">
+                Explore then &amp; now <span aria-hidden="true">↗</span>
+              </a>
             </div>
-            <h3>A legacy carried forward.</h3>
-            <p>
-              The retrospective traces Ewa Trading from its 1984 opening at 24
-              Mott Street to 80 Mulberry Street, including the shop’s reopening
-              after a four-month closure following the 2022 fire next door.
-            </p>
-            <div className="feature-facts" aria-label="Then and now highlights">
-              <div><strong>1984</strong><span>original opening</span></div>
-              <div><strong>2</strong><span>Chinatown storefronts</span></div>
-            </div>
-            <a href={thenAndNowUrl} target="_blank" rel="noreferrer">
-              Explore then &amp; now <span aria-hidden="true">↗</span>
-            </a>
           </article>
         </div>
       </section>
