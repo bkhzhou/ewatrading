@@ -22,6 +22,8 @@ test("exports a custom-domain GitHub Pages site", async () => {
   assert.match(html, /ewa-tea\.jpg/);
   assert.match(html, /Derick Marquez Photography/);
   assert.match(html, /@ewatradingnyc/);
+  assert.match(html, /Open navigation menu/);
+  assert.match(html, /Jump to any part of the shop’s story/);
   assert.doesNotMatch(html, /\/ewatrading\//);
   assert.doesNotMatch(html, /ewa-trading-chinatown\.typeoffline\.chatgpt\.site/);
 

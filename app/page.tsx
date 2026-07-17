@@ -1,3 +1,5 @@
+import MobileNav from "./mobile-nav";
+
 const directionsUrl =
   "https://www.google.com/maps/dir/?api=1&destination=Ewa+Trading+Co+Inc%2C+80+Mulberry+St%2C+New+York%2C+NY+10013";
 
@@ -25,13 +27,14 @@ export default function Home() {
             <small>裕華參茸藥材公司</small>
           </span>
         </a>
-        <nav aria-label="Main navigation">
+        <nav className="desktop-nav" aria-label="Main navigation">
           <a href="#about">Our story</a>
           <a href="#offerings">What we carry</a>
           <a href="#features">Features</a>
           <a href="#visit">Visit</a>
         </nav>
         <a className="button button-small" href={phoneHref}>Call the shop</a>
+        <MobileNav directionsUrl={directionsUrl} phoneHref={phoneHref} />
       </header>
 
       <section className="hero" id="top">
